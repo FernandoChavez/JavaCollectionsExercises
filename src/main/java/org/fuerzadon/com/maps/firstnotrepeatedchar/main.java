@@ -3,6 +3,8 @@ package org.fuerzadon.com.maps.firstnotrepeatedchar;
 public class main {
     public static void main(String[] args) {
 
+        //Objetivo: Dada una cadena, encuentra el primer carácter que no se repite usando un HashMap.
+
         String texto = "swiss";
         String texto2 = "amsjtamsj";
 

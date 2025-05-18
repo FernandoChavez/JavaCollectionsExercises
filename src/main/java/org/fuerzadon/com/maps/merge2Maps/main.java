@@ -6,6 +6,8 @@ import java.util.Map;
 public class main {
     public static void main(String[] args) {
 
+        //Escribe un metodo que reciba un Map<String, Integer> y un número n, y devuelva una lista de claves que tengan ese valor.
+
         Map<Character, Integer> map1 = new HashMap<>();
         map1.put('a', 2);
         map1.put('b', 3);
