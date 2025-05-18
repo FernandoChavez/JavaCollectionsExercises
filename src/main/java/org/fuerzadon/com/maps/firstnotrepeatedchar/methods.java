@@ -1,6 +1,5 @@
 package org.fuerzadon.com.maps.firstnotrepeatedchar;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
