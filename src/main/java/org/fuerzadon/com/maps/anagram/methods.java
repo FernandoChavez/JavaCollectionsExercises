@@ -7,6 +7,7 @@ public class methods {
 
     public static boolean isAnagram(String s1, String s2){
 
+
         s1 = s1.replace(" ", "").toLowerCase();
         s2 = s2.replace(" ", "").toLowerCase();
 
@@ -15,12 +16,10 @@ public class methods {
         Map<Character, Integer> s1Count = new HashMap<>();
         Map<Character, Integer> s2Count = new HashMap<>();
 
-        for(char c : s1.toCharArray()){
-            s1Count.put(c, s1Count.getOrDefault(c,0)+1);
-        }
 
-        for(char c : s2.toCharArray()){
-            s2Count.put(c, s2Count.getOrDefault(c,0)+1);
+        for(int i = 0; i<s1.length(); i++){
+            s1Count.put(s1.charAt(i), s1Count.getOrDefault(s1.charAt(i),0)+1);
+            s2Count.put(s2.charAt(i), s2Count.getOrDefault(s2.charAt(i), 0)+1);
         }
 
         return s1Count.equals(s2Count);
