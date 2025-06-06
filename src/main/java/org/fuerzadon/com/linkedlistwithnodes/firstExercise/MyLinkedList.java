@@ -44,6 +44,28 @@ public class MyLinkedList {
             current = current.next;
         }
         return count;
+
+    }
+
+    public void delete(int value){
+        if(head==null) return;
+
+        if (head.data==value){
+            head=head.next;
+            return;
+        }
+
+        Node current = head;
+        while(current.next != null && current.next.data !=value){
+            current = current.next;
+        }
+
+        if(current.next !=null){
+            current.next = current.next.next;
+        }
+
+
+
     }
 
 }
