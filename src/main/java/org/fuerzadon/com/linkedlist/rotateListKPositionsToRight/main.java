@@ -15,5 +15,7 @@ public class main {
         lista.add(50);
 
         int k = 2;
+
+        System.out.println(method.rotateList(lista, k));
     }
 }

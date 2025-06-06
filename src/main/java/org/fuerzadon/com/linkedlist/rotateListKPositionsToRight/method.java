@@ -24,6 +24,6 @@ public class method {
 
         parteFInal.addAll(principio);
 
-        return list;
+        return parteFInal;
     }
 }
